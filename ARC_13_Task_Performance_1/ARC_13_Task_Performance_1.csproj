@@ -21,14 +21,6 @@
     <Content Include="CRUD - Recipe %28UPDATED%29\CRUDSelection\CRUDop\CRUDcontentbox\.vs\CRUDcontentbox\v17\DocumentLayout.json" />
     <Content Include="CRUD - Recipe %28UPDATED%29\CRUDUser\.vs\CRUDUser\v17\DocumentLayout.backup.json" />
     <Content Include="CRUD - Recipe %28UPDATED%29\CRUDUser\.vs\CRUDUser\v17\DocumentLayout.json" />
-    <Content Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\v17\DocumentLayout.backup.json" />
-    <Content Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\v17\DocumentLayout.json" />
-    <Content Include="CRUD - Recipe\CRUDop\.vs\CRUDop\v17\DocumentLayout.backup.json" />
-    <Content Include="CRUD - Recipe\CRUDop\.vs\CRUDop\v17\DocumentLayout.json" />
-    <Content Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\v17\DocumentLayout.backup.json" />
-    <Content Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\v17\DocumentLayout.json" />
-    <Content Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\v17\DocumentLayout.backup.json" />
-    <Content Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\v17\DocumentLayout.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -116,68 +108,10 @@
     <None Include="CRUD - Recipe %28UPDATED%29\CRUDUser\CRUDUser.sln" />
     <None Include="CRUD - Recipe %28UPDATED%29\CRUDUser\CRUDUser\CRUDUser.csproj" />
     <None Include="CRUD - Recipe %28UPDATED%29\CRUDUser\CRUDUser\CRUDUser.csproj.user" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\CodeChunks.db" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\CodeChunks.db-shm" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\CodeChunks.db-wal" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\SemanticSymbols.db" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\SemanticSymbols.db-shm" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\CopilotIndices\17.14.995.13737\SemanticSymbols.db-wal" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\DesignTimeBuild\.dtbcache.v2" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\FileContentIndex\2aa0ec51-9ab5-4fa0-bf12-aa4dda77c922.vsidx" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\FileContentIndex\775a58ef-5218-4c91-91d3-b5ffb2e4369e.vsidx" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\FileContentIndex\86870a39-50d9-4e50-b158-297ecc3035b9.vsidx" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\CRUDcontentbox\v17\.futdcache.v2" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\ProjectEvaluation\crudcontentbox.metadata.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\ProjectEvaluation\crudcontentbox.projects.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\.vs\ProjectEvaluation\crudcontentbox.strings.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\CRUDcontentbox.sln" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\CRUDcontentbox\CRUDcontentbox.csproj" />
-    <None Include="CRUD - Recipe\CRUDcontentbox\CRUDcontentbox\CRUDcontentbox.csproj.user" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\CopilotIndices\17.14.995.13737\CodeChunks.db" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\CopilotIndices\17.14.995.13737\SemanticSymbols.db" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\DesignTimeBuild\.dtbcache.v2" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\FileContentIndex\32518100-947d-47f6-b3c7-c73dbcb76b35.vsidx" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\FileContentIndex\c616906e-9d40-4c5b-baa2-97aeb06b1524.vsidx" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\FileContentIndex\c78bc6e4-6cc2-4709-a508-a97ae73d8787.vsidx" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\FileContentIndex\dc21ec04-cc96-4876-b658-556b5fd4ab71.vsidx" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\CRUDop\v17\.futdcache.v2" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\ProjectEvaluation\crudop.metadata.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\ProjectEvaluation\crudop.projects.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDop\.vs\ProjectEvaluation\crudop.strings.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDop\CRUDop.sln" />
-    <None Include="CRUD - Recipe\CRUDop\CRUDop\CRUDop.csproj" />
-    <None Include="CRUD - Recipe\CRUDop\CRUDop\CRUDop.csproj.user" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\CopilotIndices\17.14.995.13737\CodeChunks.db" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\CopilotIndices\17.14.995.13737\SemanticSymbols.db" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\DesignTimeBuild\.dtbcache.v2" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\FileContentIndex\01ede77b-a5dc-4f3d-97be-d5b23e3de82b.vsidx" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\FileContentIndex\07cdc685-5f50-4662-918c-37f8acd28062.vsidx" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\FileContentIndex\eed8ee28-6516-4aa2-bc17-010b95cfaaf2.vsidx" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\CRUDSelection\v17\.futdcache.v2" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\ProjectEvaluation\crudselection.metadata.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\ProjectEvaluation\crudselection.projects.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDSelection\.vs\ProjectEvaluation\crudselection.strings.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDSelection\CRUDSelection.sln" />
-    <None Include="CRUD - Recipe\CRUDSelection\CRUDSelection\CRUDSelection.csproj" />
-    <None Include="CRUD - Recipe\CRUDSelection\CRUDSelection\CRUDSelection.csproj.user" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\CopilotIndices\17.14.995.13737\CodeChunks.db" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\CopilotIndices\17.14.995.13737\SemanticSymbols.db" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\DesignTimeBuild\.dtbcache.v2" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\FileContentIndex\52b97579-ba2c-4b26-a8dd-37b135fb0293.vsidx" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\FileContentIndex\9a874e2b-c910-41d3-9e9b-f18fde50f515.vsidx" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\FileContentIndex\f51c3a11-30c5-4f52-91c4-9f12338f713a.vsidx" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\CRUDUser\v17\.futdcache.v2" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\ProjectEvaluation\cruduser.metadata.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\ProjectEvaluation\cruduser.projects.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDUser\.vs\ProjectEvaluation\cruduser.strings.v9.bin" />
-    <None Include="CRUD - Recipe\CRUDUser\CRUDUser.sln" />
-    <None Include="CRUD - Recipe\CRUDUser\CRUDUser\CRUDUser.csproj" />
-    <None Include="CRUD - Recipe\CRUDUser\CRUDUser\CRUDUser.csproj.user" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="CRUD - Recipe %28UPDATED%29\CRUDUser\CRUD - Recipe\" />
-    <Folder Include="CRUD - Recipe\CRUDUser\CRUD - Recipe\" />
   </ItemGroup>
 
 </Project>

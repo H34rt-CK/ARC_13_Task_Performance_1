@@ -1,6 +1,6 @@
-﻿namespace CRUDop
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class Admin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             panel1 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -223,7 +223,7 @@
             label4.Text = "Saved Notes";
             label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -239,8 +239,9 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Admin";
+            Text = "KitchenNotes";
+            FormClosing += Admin_FormClosing;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

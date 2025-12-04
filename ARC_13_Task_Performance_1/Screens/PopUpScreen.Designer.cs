@@ -1,6 +1,6 @@
-﻿namespace CRUDcontentbox
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class PopUpScreen
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpScreen));
             panel1 = new Panel();
             button3 = new Button();
             pictureBox1 = new PictureBox();
@@ -175,7 +175,7 @@
             label1.TabIndex = 1;
             label1.Text = "Food name";
             // 
-            // Form1
+            // PopUpScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -184,8 +184,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(786, 626);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "PopUpScreen";
+            Text = "KitchenNotes";
             Resize += Form1_Resize;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

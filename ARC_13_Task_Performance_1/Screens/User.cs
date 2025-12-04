@@ -1,9 +1,9 @@
-namespace CRUDUser
+namespace ARC_13_Task_Performance_1
 {
-    public partial class Form1 : Form
+    public partial class User : Form
     {
         Dictionary<Control, Rectangle> originalControlBounds = new Dictionary<Control, Rectangle>();
-        public Form1()
+        public User()
         {
             InitializeComponent();
             this.Load += Form1_Load;
@@ -50,6 +50,11 @@ namespace CRUDUser
 
                 ctl.Font = new Font(ctl.Font.FontFamily, r.Height * 0.3f * scale, ctl.Font.Style);
             }
+        }
+
+        private void User_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

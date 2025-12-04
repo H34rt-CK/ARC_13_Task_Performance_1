@@ -1,6 +1,6 @@
-﻿namespace CRUDUser
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class User
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
             panel1 = new Panel();
             button3 = new Button();
             button2 = new Button();
@@ -154,7 +154,7 @@
             label1.TabIndex = 0;
             label1.Text = "Menu";
             // 
-            // Form1
+            // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -163,8 +163,9 @@
             ClientSize = new Size(747, 494);
             Controls.Add(panel1);
             ForeColor = Color.White;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "User";
+            Text = "KitchenNotes";
+            FormClosing += User_FormClosing;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);

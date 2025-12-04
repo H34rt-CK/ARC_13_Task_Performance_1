@@ -1,6 +1,6 @@
-﻿namespace CRUDcontentbox
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class PopUpScreen
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpScreen));
             panel1 = new Panel();
+            button3 = new Button();
+            pictureBox1 = new PictureBox();
             richTextBox1 = new RichTextBox();
             button2 = new Button();
             button1 = new Button();
@@ -38,15 +40,14 @@
             panel4 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            button3 = new Button();
             panel1.SuspendLayout();
-            panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.FromArgb(44, 34, 24);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(pictureBox1);
@@ -62,8 +63,33 @@
             panel1.Size = new Size(594, 537);
             panel1.TabIndex = 0;
             // 
+            // button3
+            // 
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.FromArgb(44, 34, 24);
+            button3.Location = new Point(11, 26);
+            button3.Name = "button3";
+            button3.Size = new Size(39, 33);
+            button3.TabIndex = 9;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(551, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(31, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // richTextBox1
             // 
+            richTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             richTextBox1.BackColor = Color.FromArgb(44, 34, 24);
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox1.Font = new Font("Gabriola", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -77,6 +103,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Left;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.FlatStyle = FlatStyle.Flat;
@@ -89,6 +116,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Right;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatStyle = FlatStyle.Flat;
@@ -103,9 +131,10 @@
             // 
             panel5.BackColor = Color.FromArgb(255, 253, 208);
             panel5.Controls.Add(panel3);
-            panel5.Location = new Point(1, 2);
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(4, 0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(591, 18);
+            panel5.Size = new Size(586, 18);
             panel5.TabIndex = 4;
             // 
             // panel3
@@ -119,21 +148,24 @@
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(255, 253, 208);
-            panel4.Location = new Point(588, 0);
+            panel4.Dock = DockStyle.Right;
+            panel4.Location = new Point(590, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(4, 479);
+            panel4.Size = new Size(4, 537);
             panel4.TabIndex = 3;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(255, 253, 208);
-            panel2.Location = new Point(1, 3);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(4, 477);
+            panel2.Size = new Size(4, 537);
             panel2.TabIndex = 2;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.Font = new Font("Gabriola", 21.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(212, 175, 55);
@@ -143,42 +175,22 @@
             label1.TabIndex = 1;
             label1.Text = "Food name";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(551, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(31, 30);
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.FromArgb(44, 34, 24);
-            button3.Location = new Point(11, 26);
-            button3.Name = "button3";
-            button3.Size = new Size(39, 33);
-            button3.TabIndex = 9;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // PopUpScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(786, 626);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "PopUpScreen";
+            Text = "KitchenNotes";
+            Resize += Form1_Resize;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 

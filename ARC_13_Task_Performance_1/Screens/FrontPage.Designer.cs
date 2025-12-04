@@ -1,6 +1,6 @@
-﻿namespace CRUDSelection
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class FrontPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrontPage));
             panel1 = new Panel();
             button1 = new Button();
             button2 = new Button();
@@ -37,37 +37,43 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Location = new Point(289, 109);
+            panel1.Location = new Point(288, 109);
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 100);
             panel1.TabIndex = 0;
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(255, 255, 192);
             button1.Font = new Font("Georgia", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(348, 262);
+            button1.Location = new Point(349, 262);
             button1.Name = "button1";
             button1.Size = new Size(101, 23);
             button1.TabIndex = 1;
             button1.Text = "ADMIN";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.None;
             button2.BackColor = Color.FromArgb(255, 255, 192);
             button2.Font = new Font("Georgia", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(348, 324);
+            button2.Location = new Point(349, 324);
             button2.Name = "button2";
             button2.Size = new Size(101, 23);
             button2.TabIndex = 2;
             button2.Text = "USER";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Vivaldi", 65.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(212, 175, 55);
@@ -77,18 +83,19 @@
             label1.TabIndex = 3;
             label1.Text = "KitchenNotes";
             // 
-            // Form1
+            // FrontPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(44, 34, 24);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(799, 450);
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Name = "FrontPage";
+            Text = "KitchenNotes";
             ResumeLayout(false);
             PerformLayout();
         }

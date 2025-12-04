@@ -1,6 +1,6 @@
-﻿namespace CRUDUser
+﻿namespace ARC_13_Task_Performance_1
 {
-    partial class Form1
+    partial class User
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
             panel1 = new Panel();
+            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             listBox1 = new ListBox();
@@ -37,7 +38,6 @@
             panel3 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
-            button3 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -58,8 +58,22 @@
             panel1.Size = new Size(282, 376);
             panel1.TabIndex = 0;
             // 
+            // button3
+            // 
+            button3.Anchor = AnchorStyles.None;
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.ForeColor = Color.FromArgb(44, 34, 24);
+            button3.Location = new Point(9, 176);
+            button3.Name = "button3";
+            button3.Size = new Size(43, 34);
+            button3.TabIndex = 6;
+            button3.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.None;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
             button2.FlatStyle = FlatStyle.Flat;
@@ -72,10 +86,11 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.BackColor = Color.FromArgb(168, 124, 0);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(111, 332);
+            button1.Location = new Point(105, 332);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 4;
@@ -84,6 +99,7 @@
             // 
             // listBox1
             // 
+            listBox1.Anchor = AnchorStyles.None;
             listBox1.BackColor = Color.FromArgb(44, 34, 24);
             listBox1.BorderStyle = BorderStyle.None;
             listBox1.ForeColor = Color.White;
@@ -96,6 +112,7 @@
             // 
             // panel4
             // 
+            panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = Color.FromArgb(245, 238, 220);
             panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
             panel4.BackgroundImageLayout = ImageLayout.Stretch;
@@ -106,6 +123,7 @@
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.None;
             panel3.BackColor = Color.FromArgb(245, 238, 220);
             panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
@@ -116,7 +134,7 @@
             // 
             // panel2
             // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel2.Anchor = AnchorStyles.None;
             panel2.BackColor = Color.FromArgb(245, 238, 220);
             panel2.Controls.Add(label1);
             panel2.Location = new Point(0, 14);
@@ -126,6 +144,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(168, 124, 0);
@@ -135,19 +154,7 @@
             label1.TabIndex = 0;
             label1.Text = "Menu";
             // 
-            // button3
-            // 
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.FromArgb(44, 34, 24);
-            button3.Location = new Point(9, 176);
-            button3.Name = "button3";
-            button3.Size = new Size(43, 34);
-            button3.TabIndex = 6;
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -156,8 +163,10 @@
             ClientSize = new Size(747, 494);
             Controls.Add(panel1);
             ForeColor = Color.White;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "User";
+            Text = "KitchenNotes";
+            FormClosing += User_FormClosing;
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

@@ -3,13 +3,16 @@ namespace ARC_13_Task_Performance_1
     public partial class User : Form
     {
         Functions functions = new Functions();
+        private bool allowClose = false;
         List<Recipe> allRecipes;
         Dictionary<Control, Rectangle> originalControlBounds = new Dictionary<Control, Rectangle>();
-        public User()
+        private Form FrontPage;
+        public User(Form previous)
         {
             InitializeComponent();
             this.Load += Form1_Load;
             this.Resize += Form1_Resize;
+            FrontPage = previous;
         }
 
         Size originalPanelSize;
@@ -62,10 +65,6 @@ namespace ARC_13_Task_Performance_1
             }
         }
 
-        private void User_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,6 +79,20 @@ namespace ARC_13_Task_Performance_1
             {
                 MessageBox.Show("Please select a recipe.");
             }
+        }
+
+        private void User_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!allowClose)
+            {
+                Application.Exit();
+            }
+        }
+        private void ReturnButton_Click(object sender, EventArgs e)
+        {
+            allowClose = true;
+            FrontPage.Show();
+            this.Close();
         }
     }
 }

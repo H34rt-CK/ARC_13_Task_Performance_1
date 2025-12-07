@@ -38,7 +38,9 @@
             panel3 = new Panel();
             panel2 = new Panel();
             label1 = new Label();
+            ReturnButton = new Button();
             panel1.SuspendLayout();
+            panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -127,6 +129,7 @@
             panel3.BackColor = Color.FromArgb(245, 238, 220);
             panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(ReturnButton);
             panel3.Location = new Point(166, 14);
             panel3.Name = "panel3";
             panel3.Size = new Size(113, 27);
@@ -154,6 +157,19 @@
             label1.TabIndex = 0;
             label1.Text = "Menu";
             // 
+            // ReturnButton
+            // 
+            ReturnButton.Anchor = AnchorStyles.None;
+            ReturnButton.BackColor = Color.FromArgb(168, 124, 0);
+            ReturnButton.FlatStyle = FlatStyle.Flat;
+            ReturnButton.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ReturnButton.Location = new Point(85, 3);
+            ReturnButton.Name = "ReturnButton";
+            ReturnButton.Size = new Size(20, 21);
+            ReturnButton.TabIndex = 7;
+            ReturnButton.UseVisualStyleBackColor = false;
+            ReturnButton.Click += ReturnButton_Click;
+            // 
             // User
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -168,6 +184,7 @@
             FormClosing += User_FormClosing;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
@@ -184,5 +201,6 @@
         private ListBox listBox1;
         private Button button2;
         private Button button3;
+        private Button ReturnButton;
     }
 }

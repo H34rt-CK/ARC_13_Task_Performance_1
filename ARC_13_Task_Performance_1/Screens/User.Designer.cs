@@ -36,9 +36,10 @@
             listBox1 = new ListBox();
             panel4 = new Panel();
             panel3 = new Panel();
+            ReturnButton = new Button();
             panel2 = new Panel();
             label1 = new Label();
-            ReturnButton = new Button();
+            panel5 = new Panel();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -129,11 +130,25 @@
             panel3.BackColor = Color.FromArgb(245, 238, 220);
             panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(panel5);
             panel3.Controls.Add(ReturnButton);
             panel3.Location = new Point(166, 14);
             panel3.Name = "panel3";
             panel3.Size = new Size(113, 27);
             panel3.TabIndex = 1;
+            // 
+            // ReturnButton
+            // 
+            ReturnButton.Anchor = AnchorStyles.None;
+            ReturnButton.BackColor = Color.FromArgb(168, 124, 0);
+            ReturnButton.FlatStyle = FlatStyle.Flat;
+            ReturnButton.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ReturnButton.Location = new Point(85, 3);
+            ReturnButton.Name = "ReturnButton";
+            ReturnButton.Size = new Size(20, 21);
+            ReturnButton.TabIndex = 7;
+            ReturnButton.UseVisualStyleBackColor = false;
+            ReturnButton.Click += ReturnButton_Click;
             // 
             // panel2
             // 
@@ -157,18 +172,15 @@
             label1.TabIndex = 0;
             label1.Text = "Menu";
             // 
-            // ReturnButton
+            // panel5
             // 
-            ReturnButton.Anchor = AnchorStyles.None;
-            ReturnButton.BackColor = Color.FromArgb(168, 124, 0);
-            ReturnButton.FlatStyle = FlatStyle.Flat;
-            ReturnButton.Font = new Font("Bernard MT Condensed", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ReturnButton.Location = new Point(85, 3);
-            ReturnButton.Name = "ReturnButton";
-            ReturnButton.Size = new Size(20, 21);
-            ReturnButton.TabIndex = 7;
-            ReturnButton.UseVisualStyleBackColor = false;
-            ReturnButton.Click += ReturnButton_Click;
+            panel5.BackColor = Color.FromArgb(168, 124, 0);
+            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Location = new Point(88, 7);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(14, 12);
+            panel5.TabIndex = 7;
             // 
             // User
             // 
@@ -202,5 +214,6 @@
         private Button button2;
         private Button button3;
         private Button ReturnButton;
+        private Panel panel5;
     }
 }

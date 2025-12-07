@@ -46,6 +46,7 @@
             RecipeList = new ListBox();
             label4 = new Label();
             ReadButton = new Button();
+            panel5 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -55,6 +56,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(44, 34, 24);
+            panel1.Controls.Add(panel5);
             panel1.Controls.Add(ReturnButton);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
@@ -260,6 +262,16 @@
             ReadButton.UseVisualStyleBackColor = false;
             ReadButton.Click += ReadButton_Click;
             // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(168, 124, 0);
+            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Location = new Point(924, 12);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(20, 18);
+            panel5.TabIndex = 4;
+            // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -279,8 +291,8 @@
             Controls.Add(panel1);
             Name = "Admin";
             Text = "KitchenNotes";
-            Load += Admin_Load;
             FormClosing += Admin_FormClosing;
+            Load += Admin_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -310,5 +322,6 @@
         private ListBox RecipeList;
         private Button ReadButton;
         private Button ReturnButton;
+        private Panel panel5;
     }
 }

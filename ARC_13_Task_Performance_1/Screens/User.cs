@@ -2,6 +2,8 @@ namespace ARC_13_Task_Performance_1
 {
     public partial class User : Form
     {
+        Functions functions = new Functions();
+        List<Recipe> allRecipes;
         Dictionary<Control, Rectangle> originalControlBounds = new Dictionary<Control, Rectangle>();
         public User()
         {
@@ -27,6 +29,14 @@ namespace ARC_13_Task_Performance_1
 
             panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
             panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
+            allRecipes = functions.Read();
+            listBox1.DataSource = allRecipes;
+            listBox1.DisplayMember = "Title";
+            listBox1.ValueMember = "Id";
+            if (allRecipes.Count > 0)
+            {
+                listBox1.SelectedIndex = 0;
+            }
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -55,6 +65,21 @@ namespace ARC_13_Task_Performance_1
         private void User_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex >= 0)
+            {
+                Recipe selectedRecipe = allRecipes[listBox1.SelectedIndex];
+                PopUpScreen popUp = new PopUpScreen(selectedRecipe, this);
+                popUp.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please select a recipe.");
+            }
         }
     }
 }

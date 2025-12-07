@@ -85,7 +85,7 @@ namespace ARC_13_Task_Performance_1
 
         public override string ToString()
         {
-            return Title; // Show only Title in the ListBox
+            return Title; 
         }
     }
 }
